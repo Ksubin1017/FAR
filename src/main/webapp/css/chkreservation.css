@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.chk_img {
+	width: 150px;
+	height: 150px;
+}
+
+.chk_list{
+	display: flex;
+}
+
+.chk_list_img {
+	float:left;
+}
+
+.chk_info {
+	float:right;
+}
+
+.chk_cont {
+	float:right;
+}
+
+.myPageInclude_logo {
+	float:left;
+}
+
+.myPage_select {
+	margin-left: 700px; 
+}

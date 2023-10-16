@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+body h2 {
+	text-align: center;
+}
+
+
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border: none;
+	border-top: 1px solid rgb(192, 192, 192);
+}
+
+.storeRegistrationForm {
+	width: 900px;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid rgb(128, 128, 128);
+	border-radius: 5px;
+	margin-top: -10px;
+	margin-left: 15px;
+}
+
+.storeRegistration {
+	margin-bottom: 15px;
+}
+
+.storeRegistration label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+#typeSelect1, #typeSelect2 {
+	margin-left: 15px;
+}
+
+#storeName, #businessRegistrationNumber, #logoImage, #menuImage {
+	width: 850px;
+	padding: 8px;
+	border: 1px solid rgb(128, 128, 128);
+	display: block;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+
+#storeIntro {
+	width: 850px;
+	padding: 8px;
+	border: 1px solid rgb(128, 128, 128);
+	resize: none;
+	display: block;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+
+.storeAddressArea {
+	display: flex;
+	flex-direction: column;
+}
+.storeAddressF{
+	display: flex;
+}
+
+#storeAddressextraAddress{
+	width: 200px;
+    padding: 8px;
+    border: 1px solid #000000;
+    display: block;
+    border-radius: 10px;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    margin-left: 15px;
+    margin-top: 7px;
+    height: 33px;
+}
+#storeAddressPostcode{
+	width: 200px;
+    padding: 8px;
+    border: 1px solid #000000;
+    display: block;
+    border-radius: 10px;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#storeAddressFirst {
+	width: 400px;
+    padding: 8px;
+    border: 1px solid rgb(128, 128, 128);
+    display: block;
+    border-radius: 5px;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#storeAddressSecond {
+	width: 500px;
+    padding: 8px;
+    border: 1px solid rgb(128, 128, 128);
+    display: block;
+    margin-top: 7px;
+    border-radius: 5px;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    margin-left: 15px;
+}
+
+.storeRegistrationButton {
+	text-align: right;
+	margin-right: 5px;
+}
+
+.storeRegistrationBtn {
+	padding: 8px 13px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+}

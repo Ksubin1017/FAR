@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.table_container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+	width: 900px;
+}

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.storeMainWrap {
+	width: 1300px;
+	height: 1300px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;	/* 수평 중앙 정렬 */
+	padding: 10px;
+	
+}
+
+.storeStickyArea {
+	width: 200px;
+	height: 130px;
+	position: sticky;
+	z-index: 100;
+	margin-right: 50px;
+	
+}
+
+
+ .storeMain li {
+      padding-left: 10px; /* 점과 글자 사이의 간격을 조절하려면 이 값을 조정하세요. */
+      margin-top: 20px; /* 각 목록 항목 사이에 추가 간격을 부여합니다. */
+      color: rgb(0, 0, 0); /* 필요한 대로 색상을 조정하세요. */
+    }
+
+   
+.storeRegistrationMain, .storeMenuRegis, .storeInfoEdit {
+	margin-bottom: 5px;
+}
+
+.storeRegistrationMain, .storeMenuRegis, .storeInfoEdit, .storeMenuEdit {
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#storeContentArea {
+	width: 950px;
+	height: 900px;
+	margin-left: 15px;
+/*	margin-top: 10px;*/
+}
+
+table {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-collapse: collapse;  
+ 	text-align: center;
+}
+
+.first-line {
+	text-align: center;
+}
+
+.menuRegisForm img {
+	width: 150px;
+	height: 150px;
+}
+.menuRegisForm {
+	height: 100%;
+	width: 950px;
+}
+
+.contentArea{
+	height: 1100px;
+	width: 950px;
+}

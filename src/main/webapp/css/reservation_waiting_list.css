@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.reservationWaitTable {
+	font-family: Arial, sans-serif;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+	width: 1000px;
+	border-collapse: collapse;
+	margin-left: 15px;
+}
+
+th, td {
+	border: 1px solid #000000;
+	text-align: center;
+	padding: 8px;
+}

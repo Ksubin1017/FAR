@@ -1,0 +1,820 @@
+@charset "UTF-8";
+.shop_name{
+	display: flex;
+	margin-left: 350px;
+}
+.jjim_shop{
+	
+}
+.jjim_shop button{
+	 width : 45px;
+	 height: 35px;
+	 margin-top: 5px;
+	margin-left: 5px;
+	background-color: white;
+	border: none;
+}
+
+.jjim_shop img{
+	width: 35px;
+	height: 35px;
+	margin-lrft: -20px;
+	margin-top: -10px;
+}
+.separator {
+   margin-right: 4px;
+   margin-left: 4px;
+}
+
+
+/*숙박 상세정보 전체*/
+.shop_cont{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-left: -100px;
+	margin-bottom: 60px;
+}
+
+
+/*숙박업체 사진 및 정보*/
+.shop_cont_top {
+	display: flex;
+}
+
+
+.shop_photo{
+	width: 500px;
+	height: 350px;
+	margin-left: 360px;
+	margin-top: 15px;
+}
+
+.shop_photo_div{
+	width: 500px;
+	height: 350px;
+}
+.shop_info{
+	width: 100%;
+	display: flex;
+}
+
+.info_cate {
+	width: 200px;
+	margin-left: 10px;
+	list-style: none;
+}
+
+.info_cont {
+	width: 400px;
+	list-style: none;
+}
+
+.info_cate li {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.info_cont li {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+
+
+/* 내용 */
+.shop_info_cont {
+	width: 1050px;
+	height: 100%;
+	margin-top: 40px;
+	border: 1px solid black;
+	margin-left: 350px;
+}
+
+.shop_info_cont input[type=radio] {
+	display: none;
+}
+
+
+#service:checked ~ .tab label:nth-child(1),
+#information:checked ~ .tab label:nth-child(2),
+#cancellation:checked ~ .tab label:nth-child(3),
+#map_guide:checked ~ .tab label:nth-child(4) ,
+#review:checked ~ .tab label:nth-child(5) {
+	background-color: black;
+	color: white;
+	box-shadow: none;
+}
+
+.content>div {
+	display: none;
+}
+
+#service:checked ~ .shop_content div:nth-child(1),
+#information:checked ~ .shop_content div:nth-child(2),
+#cancellation:checked ~ .shop_content div:nth-child(3),
+#map_guide:checked ~ .shop_content div:nth-child(4) ,
+#review:checked ~ .shop_content div:nth-child(5) {
+	display: block;
+}
+
+.tab {
+	overflow: hidden;
+}
+
+.tab label {
+	font-size: 18px;
+	cursor: pointer;
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 15px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.shop_cont_div {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.content-dis {
+	margin-bottom: 50px;
+}
+
+.shop_info_cont hr {
+	border: 1px solid #303030;
+	border-width: thin;
+	margin-top: -9px;
+	transform: scaleY(0.5);
+}
+
+/*객실정보*/
+.acc_room_list {
+	width: 900px;
+	margin-left: -280px;
+}
+
+.acc_room_list h3 {
+	margin-left: -80px;
+}
+
+.acc_room_list hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+.roomListContainer{
+	margin-top: 50px;
+}
+.room_list {
+	margin-left: 350px;
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+}
+
+.room_list img {
+	width: 300px;
+	height: 230px;
+}
+
+.room_info {
+	width: 600px;
+	height: 230px;
+	border: 1px solid lightgray;
+	margin-left: 10px;
+	display: flex;
+}
+
+.room_detailinfo {
+	width: 400px;
+	list-style: none;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.room_detailinfo p {
+	width: 280px;
+	margin-bottom: 20px;
+	color: gray;
+	text-align: center;
+	font-size: 11pt;
+}
+
+.booking_button h2 {
+	margin-left: 20px;
+}
+
+.booking_button {
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+.booking_button input {
+	width: 150px;
+	height: 50px;
+	font-size: 10pt;
+	margin-left: 20px;
+	border-radius: 10px;
+	margin-top: 15px;
+}
+
+/* 호텔정책 */
+.acc_policy {
+	width: 900px;
+	margin-left: -280px;
+}
+
+.acc_policy h3 {
+	text-align: left;
+	margin-left: 360px;
+}
+
+.acc_policy hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.acc_policy li {
+	width: 750px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 440px;
+	list-style: none;
+	font-size: 12pt;
+}
+
+/*호텔소개*/
+.acc_introduce {
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.acc_introduce h3 {
+	text-align: left;
+	margin-left: 360px;
+}
+
+.acc_introduce hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.acc_introduce li {
+	width: 750px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 440px;
+	list-style: none;
+	font-size: 12pt;
+}
+
+.acc_introduce label {
+	background-color: pink;
+}
+
+/*판매자 정보*/
+.seller_info {
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.seller_info h3 {
+	text-align: left;
+	margin-left: 360px;
+}
+
+.seller_info hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.seller_info p {
+	margin-top: 15px;
+	text-align: left;
+	margin-left: 480px;
+	font-size: 12pt;
+}
+
+/*지도 상세보기*/
+
+#map{
+	margin-left: 355px;
+	width: 900px;
+	height:400px;
+}
+.acc_map{
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.acc_map h3 {
+	text-align: left;
+	margin-left: 360px;
+	margin-top: 60px;
+}
+
+.acc_map hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+
+/* 교통안내 */
+.guide {
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.guide h3 {
+	text-align: left;
+	margin-left: 360px;
+	margin-top: 60px;
+}
+
+.guide hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.guide h4 {
+	margin-left: 380px;
+	text-align: left;
+}
+
+/*이용안내/취소규정*/
+.cancellation_policy {
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.cancellation_policy h3 {
+	text-align: left;
+	margin-left: 360px;
+	margin-top: 60px;
+}
+
+.cancellation_policy hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.common_policy {
+	background-color: #e0e0e0;
+	width: 900px;
+	height: 35px;
+	margin-left: 350px;
+	padding-top: 15px;
+}
+
+.common_policy p {
+	font-size: 13pt;
+	font-weight: bold;
+	margin-left: -770px;
+	margin-top: -5px;
+}
+
+.cancellation_policy li {
+	width: 850px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 330px;
+	list-style: none;
+	font-size: 12pt;
+}
+
+.cancellation_policy h4 {
+	color: gray;
+}
+
+.refund_process {
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.refund_process h4 {
+	text-align: left;
+	margin-left: 360px;
+	margin-top: 80px;
+}
+
+.refund_process hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.refund_process li {
+	width: 850px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 330px;
+	list-style: none;
+	font-size: 10pt;
+}
+
+.refund_process p {
+	font-weight: bolder;
+}
+
+.receipt_issuing {
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.receipt_issuing h4 {
+	text-align: left;
+	margin-left: 360px;
+	margin-top: 80px;
+}
+
+.receipt_issuing hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.receipt_issuing li {
+	width: 850px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 330px;
+	list-style: none;
+	font-size: 10pt;
+}
+
+.CS_numbder {
+	width: 900px;
+	margin-left: -280px;
+	margin-top: 40px;
+}
+
+.CS_numbder h4 {
+	text-align: left;
+	margin-left: 360px;
+	margin-top: 80px;
+}
+
+.CS_numbder hr {
+	width: 910px;
+	margin-left: 350px;
+	border: 1px solid;
+}
+
+.CS_numbder li {
+	width: 850px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 330px;
+	list-style: none;
+	font-size: 12pt;
+}
+
+/* 이용후기*/
+.review_form h3 {
+	margin-left: -700px;
+}
+
+.Review_cont {
+	width: 900px;
+	margin-left: 50px;
+	margin-top: 40px;
+	border-radius: 10px;
+}
+
+.Review_cont hr {
+	width: 910px;
+	margin-left: 30px;
+	border: 1px solid;
+}
+
+.detail_review_table_div {
+	display: flex;
+	margin-left: 100px;
+}
+
+.detail_review_table {
+	width: 600px;
+	position: static;
+}
+
+#reviewForm {
+	margin-left: -150px;
+}
+
+.detail_review_table2 {
+	width: 400px;
+	margin-right: 100px;
+}
+
+.detail_review hr {
+	width: 910px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.review_write {
+	margin-top: 30px;
+	margin-left: 200px;
+}
+
+.Review_cont li h3 {
+	text-align: left;
+	margin-left: 320px;
+	margin-top: 60px;
+	margin-bottom: -30px;
+}
+
+.review_write {
+	margin-top: 30px;
+	margin-left: 150px;
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+
+.review_rating_form {
+	margin-top: 50px;
+	margin-left: 150px;
+}
+
+.review_write h3 {
+	margin-left: -800px;
+}
+
+.review_write td {
+	text-align: left;
+}
+
+#review_title {
+	width: 700px;
+}
+
+.review_write textarea {
+	width: 850px;
+	resize: none;
+	border-radius: 5px;
+}
+
+.review_write textarea::placeholder {
+	padding: 5px;
+}
+
+.review_write textarea {
+	width: 700px;
+	resize: none;
+}
+
+.detail_review {
+	width: 500px;
+}
+
+.edit_review {
+	
+}
+
+.detail_review_tr {
+	width: 500px;
+	margin-left: 200px;
+}
+
+.review_edit {
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.review_del {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.review_buttons {
+	width: 200px;
+	margin-right: -500px;
+	margin-top: -10px;
+}
+
+.review_edit_del {
+	display: flex;
+	margin-left: 55px;
+}
+
+.edit_review_btn {
+	margin-right: 10px;
+}
+
+#reviewRecommend{
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	display: flex;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-left: 60px
+}
+
+#reviewRecommend IMG{
+	margin-top: 2px;
+}
+#reviewRecommend p{
+	margin-left: 1px;
+	margin-top: 4px;
+	font-size: 13pt;
+	font-weight: lighter;
+	color: #a8a8a8;
+}
+
+#yes_re{
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-left: 60px
+}
+
+#yes_re IMG{
+	margin-top: 2px;
+}
+#yes_re p{
+	margin-left: 1px;
+	margin-top: 4px;
+	font-size: 13pt;
+	font-weight: lighter;
+	color: #000000;
+}
+
+
+.detail_review_table hr {
+	width: 910px;
+	border: 1px solid gray;
+	margin-top: 10px;
+}
+
+.detail_review_table td {
+	margin-top: 15px;
+}
+
+.review_page {
+	margin-left: 100px;
+}
+
+.table_space {
+	marigin-left: 540px;
+}
+#review_recommend:active{
+	border-color: black;
+	
+}
+/*글자수*/
+.text_length {
+	
+}
+/*리뷰 등록 버튼*/
+.ReviewWriteBtn {
+	width: 70px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	margin-top: 5px;
+}
+/*별점*/
+
+#reviewRating{
+	width: 500px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	margin-left: -10px;
+	
+}
+#reviewRating fieldset{
+    display: inline-block;
+    direction: rtl;
+    border:0;
+}
+#reviewRating fieldset legend{
+    text-align: left;
+}
+#reviewRating input[type=radio]{
+    display: none;
+}
+#reviewRating label{
+    font-size: 20pt;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+#reviewRating label:hover{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#reviewRating label:hover ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#reviewRating input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+#review_rating fieldset {
+	display: inline-block;
+	direction: rtl;
+	border: 0;
+}
+
+#review_rating fieldset legend {
+	text-align: left;
+}
+
+#review_rating input[type=radio] {
+	display: none;
+}
+
+#review_rating label {
+	font-size: 20pt;
+	color: transparent;
+	text-shadow: 0 0 0 #f0f0f0;
+}
+
+#review_rating label:hover {
+	text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+#review_rating label:hover ~ label {
+	text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+#review_rating input[type=radio]:checked ~ label {
+	text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+/*별점*/
+
+#reviewRating_edit{
+	width: 500px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	margin-left: -10px;
+}
+
+#reviewRating_edit fieldset{
+    display: inline-block;
+    direction: rtl;
+    border:0;
+}
+#reviewRating_edit fieldset legend{
+    text-align: left;
+}
+#reviewRating_edit input[type=radio]{
+    display: none;
+}
+#reviewRating_edit label{
+    font-size: 20pt;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+#reviewRating_edit label:hover{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#reviewRating_edit label:hover ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#reviewRating_edit input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+.show .popup {
+	transform: translate(-50%, -50%);
+	transition: all .5s;
+}
+
+.list_button_div {
+	width: 1300px;
+	justify-content: center;
+	display: flex;
+}
+
+.list_button {
+	height: 50px;
+	width: 200px;
+	margin-left: 250px;
+}
+

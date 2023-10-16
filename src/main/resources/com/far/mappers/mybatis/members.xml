@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="Member">
+ 	
+ 	<insert id="mem_in">
+	 	insert into member(memId, memPwd, memName, memEmail, memTel, memClass)
+	 	 values(#{memId}, #{memPwd}, #{memName}, #{memEmail}, #{memTel}, #{memClass})
+ 	</insert>
+ 	
+ 	<select id="memselect" resultType="int">
+ 		select count(*) from member where memId = #{memId} and memPwd = #{memPwd}
+ 	</select>
+ 	
+ 	<select id="mem_select_id" resultType="int">
+ 		select count(*) from member where memId = #{memId}
+ 	</select>
+ 	
+ 	<select id="findIdEmail" resultType="String">
+ 		select memId from member where memName = #{memName} and memEmail = #{memEmail}
+ 	</select>
+ 	
+ 	<select id="memClass" resultType="String">
+ 		select memClass from member where memId = #{memId}
+ 	</select>
+ 	
+ 	<update id="resetPwd">
+ 		update member set memPwd = #{memPwd} where memId = #{memId}
+ 	</update>
+
+ 	<!-- AdminController 일반 회원 목록 -->
+ 	<select id="getMemList" resultType="member">
+ 		select * from member where memClass = #{memClass}
+ 	</select>
+ 	
+ 	<select id="getMemClass" resultType="member">
+ 		select * from member where memId = #{memId}
+ 	</select>
+ 	
+ 	<select id="getTel" resultType="String">
+ 		SELECT memtel FROM member WHERE memId = #{memId}
+ 	</select>
+ 	
+ </mapper>
+ 

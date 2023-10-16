@@ -1,0 +1,104 @@
+        .topTen_cultureMain {
+            justify-content: center;
+
+            padding-top: 10px;
+        }
+
+        .topTen_cultureBox {
+            width: 1400px;
+            height: 620px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            padding-top: 30px;
+
+        }
+
+        .topTen_culture {
+            list-style: none;
+            /* 목록 스타일 제거 */
+            padding: 0;
+            /* 내부 여백 제거 */
+        }
+
+        .topTen_culture {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            width: 1380px;
+            height: 620px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 0 auto;
+            padding: 0;
+
+        }
+
+        .tpc {
+            height: 700px;
+            border-radius: 20px;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .tpc img {
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        #tpctext {
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.363);
+            color: #fff;
+            padding-top: 10px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 2px ridge;
+
+        }
+
+        .topTen_culture button {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+        }
+
+        .topTen_culture button:before {
+            font-family: 'xeicon';
+            color: #fff;
+            font-size: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .topTen_culture button.slick-prev {
+            left: 10px;
+            font-size: 0;
+            color: transparent;
+            display: none;
+        }
+
+        .topTen_culture button.slick-prev:before {
+            content: "\e93b";
+        }
+
+        .topTen_culture button.slick-next {
+            right: 10px;
+            font-size: 0;
+            color: transparent;
+        }
+
+        .topTen_culture button.slick-next:before {
+            content: "\e93e";
+        }

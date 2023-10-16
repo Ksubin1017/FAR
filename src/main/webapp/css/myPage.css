@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+.myPageListwrap {
+	width: 1300px;
+	 display: flex;
+	margin: 0 auto;
+	
+}
+
+.myPageReservation {
+	display: inline-block;
+	width: 80%;
+	margin-top: 80px;
+	justify-content: flex-end;
+	margin-left: auto;
+	background-color: blue;
+}
+
+.myPageReservation>div {
+	width: 20%;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+}
+
+.myPageCommon {
+	background-color: pink;
+}
+
+.myPageAcc {
+	background-color: yellow;
+}
+
+.myPageRestaurant {
+	background-color: skyblue;
+}
+
+.myPageBeauty {
+	background-color: aqua;
+}
+
+.myPageArt {
+	background-color: green;
+}
+
+
+
+.myPageList {
+	margin-left: 30px;
+	margin-top : -90px;
+	width: 200px;
+	margin-top: -90px;
+}
+
+.myPageList>ul {
+	width: 210px;
+	margin-top : 100px;
+	margin-right: 20px;
+	
+	padding-left: 20px;
+	margin-top: 100px;
+}
+
+.myPageList>ul>li {
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.myPageListReservation {
+	margin-top: 35px;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.myPageListReservation:hover {
+	top: -5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.myPageJjim:hover {
+	top: -5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.myPageInfo:hover {
+	top: -5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.myPageCoupon:hover {
+	top: -5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.myPagecs:hover {
+	top: -5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#pageContent {
+	margin-left: 80px;
+	margin-top: 45px;
+	width: 1000px;
+}
+
+.myPageheader {
+	display: flex;
+}
+
+.myPageInclude_logo {
+	float: left;
+}
+
+.myPage_select {
+	margin-left: 700px;
+}
+
+.chk_list_img {
+	float: left;
+}
+
+.chk_info {
+	float: right;
+}
+
+.chk_cont {
+	float: right;
+}

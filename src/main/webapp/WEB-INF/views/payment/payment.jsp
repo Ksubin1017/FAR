@@ -305,8 +305,8 @@
 
 
 <script>
-   var IMP = window.IMP;
-   IMP.init("imp17372284");
+   //var IMP = window.IMP;
+   
    
    function calculateTotalAmount() {
       var roomPrice = parseFloat("${room.roomPrice}");
@@ -321,36 +321,37 @@
    }
    
    function requestPay() {
-       var totalAmount = calculateTotalAmount();
-       var pointEarn = totalAmount * 0.1;
+	   IMP.init("imp17372284");
+	   var totalAmount = calculateTotalAmount();
+	   var pointEarn = totalAmount * 0.1;
 
-       // 결제 요청 전에 totalAmount가 0원인지 확인
-       if (totalAmount === 0) {
-           // 0원 결제도 성공으로 처리
-           handlePaymentSuccess(0);
-           return;
-       }
+	   // 결제 요청 전에 totalAmount가 0원인지 확인
+	   if (totalAmount === 0) {
+	       // 0원 결제도 성공으로 처리
+	       handlePaymentSuccess(0);
+	       return;
+	   }
 
-       IMP.request_pay({
-           pg: 'kakaopay',
-           pay_method: "card",
-           merchant_uid: 'merchant_' + new Date().getTime(),
-           name: "${room.roomName}",
-           amount: totalAmount,
-           buyer_email: "${member.memEmail}",
-           buyer_name: "${member.memId}",
-           buyer_tel: "${member.memTel}"
-       }, function (rsp) { // callback 
-           if (rsp.success) {
-               // 결제 성공 처리
-               handlePaymentSuccess(totalAmount);
-           } else {
-               // 결제 실패 처리
-               alert("결제 실패");
-               document.location.href = "/";
-           }
-       });
-   }
+	   IMP.request_pay({
+	       pg: 'html5_inicis',
+	       pay_method: "card",
+	       merchant_uid: 'merchant_' + new Date().getTime(),
+	       name: "${room.roomName}",
+	       amount: totalAmount,
+	       buyer_email: "${member.memEmail}",
+	       buyer_name: "${member.memId}",
+	       buyer_tel: "${member.memTel}"
+	   }, function (rsp) { // callback 
+	       if (rsp.success) {
+	           // 결제 성공 처리
+	           handlePaymentSuccess(totalAmount);
+	       } else {
+	           // 결제 실패 처리
+	           alert("결제 실패: " + rsp.error_msg); // 오류 메시지 표시
+	           // document.location.href = "/"; // 실패 시 리다이렉트 설정 (선택사항)
+	       }
+	   });
+	}
 
    function handlePaymentSuccess(totalAmount) {
        var pointEarn = totalAmount * 0.01;

@@ -16,10 +16,10 @@
 				href="/search?keyword=${keyword}">통합검색</a></li>
 			<li class="nav-item"><a class="nav-link active"
 				href="/search/acc?keyword=${keyword}">숙소</a></li>
-			<li class="nav-item"><a class="nav-link"
+			<%-- <li class="nav-item"><a class="nav-link"
 				href="/search/food?keyword=${keyword}">음식</a></li>
 			<li class="nav-item"><a class="nav-link"
-				href="/search/culture?keyword=${keyword}">문화</a></li>
+				href="/search/culture?keyword=${keyword}">문화</a></li> --%>
 		</ul>
 	</div>
 	<div id="tab-content">

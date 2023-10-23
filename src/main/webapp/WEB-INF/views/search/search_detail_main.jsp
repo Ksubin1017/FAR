@@ -27,10 +27,7 @@
 					 href="/search?keyword=${keyword}">통합검색</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="/search/acc?keyword=${keyword}">숙소</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="/search/food?keyword=${keyword}">음식</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="/search/culture?keyword=${keyword}">문화</a></li>
+				
 			</ul>
 		</div>
 
@@ -135,7 +132,7 @@
 
 				<!-- 음식 -->
 
-				<h3 class="mainText">-음식</h3>
+				<%-- <h3 class="mainText">-음식</h3>
 				<div class="food_all result-section" id="foodResults">
 					
 					<c:set var="foodCount" value="0" />
@@ -189,7 +186,7 @@
 														<div data-cell>
 															<p class="infoInfostar">
 																<!-- 가게 등급 -->
-																<%-- ${'<span>⭐</span>'.repeat(Math.floor(store.storeScore))} --%>
+																${'<span>⭐</span>'.repeat(Math.floor(store.storeScore))}
 																<!-- 오류는 뜨지만 아주 잘 작동함...! -->
 																<strong>(${store.storeScore})</strong>
 															</p>
@@ -271,7 +268,7 @@
 													<div data-cell>
 														<p class="infoInfostar">
 															<!-- 가게 등급 -->
-															<%-- ${'<span>⭐</span>'.repeat(Math.floor(store.storeScore))} --%>
+															${'<span>⭐</span>'.repeat(Math.floor(store.storeScore))}
 															<!-- 오류는 뜨지만 아주 잘 작동함...! -->
 															<strong>(${store.storeScore})</strong>
 														</p>
@@ -294,7 +291,7 @@
 			<div class="addListBtn" id="cultureList">
 				<a href="/search/culture?keyword=${keyword}" id="cultureMore"> <span
 					class="addView">예술/문화 더보기</span></a>
-			</div>
+			</div> --%>
 		</div>
 	</div>
 
